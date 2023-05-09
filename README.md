@@ -140,5 +140,3 @@ This project is [MIT](<a href="./LICENSE">License</a>) licensed.
 <a href="./LICENSE">License</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-Original design idea by <a href="https://www.behance.net/sakwadesignstudio">Nelson Sakwa on Behance</a>.
