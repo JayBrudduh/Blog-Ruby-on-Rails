@@ -25,7 +25,7 @@ default: &default
 
 development:
   <<: *default
-  database: test
+  database: blog_rails
   user: postgres
   password: 1215ehc
 
@@ -61,7 +61,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: test
+  database: blog_rails
   user: postgres
   password: 1215ehc
 
@@ -87,6 +87,6 @@ test:
 #
 production:
   <<: *default
-  database: test
-  username: hello_rails
+  database: blog_rails
+  username: postgres
   password: <%= ENV["1215ehc"] %>
