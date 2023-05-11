@@ -1,4 +1,4 @@
-# : true
+
 
 # Add Foreign Key
 class AddPostRefToComments < ActiveRecord::Migration[7.0]

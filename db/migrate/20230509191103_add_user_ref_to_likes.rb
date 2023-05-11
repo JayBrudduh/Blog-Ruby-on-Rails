@@ -1,4 +1,4 @@
-# : true
+
 
 # Add Foreign Key
 class AddUserRefToLikes < ActiveRecord::Migration[7.0]

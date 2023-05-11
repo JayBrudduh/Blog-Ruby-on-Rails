@@ -1,4 +1,4 @@
-# : true
+
 
 class ChangeColumnTypeInPosts < ActiveRecord::Migration[7.0]
   def change

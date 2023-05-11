@@ -1,4 +1,4 @@
-# : true
+
 
 # Add Foreign Key
 class AddUserRefToPosts < ActiveRecord::Migration[7.0]

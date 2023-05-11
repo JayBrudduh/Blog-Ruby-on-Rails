@@ -1,4 +1,4 @@
-# : true
+
 
 # Add columns to table
 class AddColumnToComments < ActiveRecord::Migration[7.0]

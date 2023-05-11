@@ -1,4 +1,4 @@
-# : true
+
 
 # ApplicationMailer
 class ApplicationMailer < ActionMailer::Base

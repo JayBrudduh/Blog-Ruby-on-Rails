@@ -1,4 +1,4 @@
-# : true
+
 
 # Create Posts Table
 class CreatePosts < ActiveRecord::Migration[7.0]

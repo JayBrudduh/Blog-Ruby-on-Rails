@@ -1,4 +1,4 @@
-# : true
+
 
 class ChangeColumnTypeInComments < ActiveRecord::Migration[7.0]
   def change

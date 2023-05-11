@@ -1,4 +1,4 @@
-# : true
+
 
 # ApplicationHelper
 module ApplicationHelper

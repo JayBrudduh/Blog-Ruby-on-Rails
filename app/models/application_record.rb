@@ -1,4 +1,4 @@
-# : true
+
 
 # ApplicationRecord
 class ApplicationRecord < ActiveRecord::Base

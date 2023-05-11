@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# : true
+
 
 require_relative '../config/application'
 require 'importmap/commands'
