@@ -53,6 +53,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Migration DB feature: tables and Relations**
+- **Models and Active Records**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
