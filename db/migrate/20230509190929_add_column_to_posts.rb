@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# : true
 
 # Add columns to table
 class AddColumnToPosts < ActiveRecord::Migration[7.0]

@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# : true
 
 class User < ApplicationRecord
   has_many :posts, foreign_key: :author_id

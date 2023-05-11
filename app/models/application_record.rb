@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# : true
 
 # ApplicationRecord
 class ApplicationRecord < ActiveRecord::Base

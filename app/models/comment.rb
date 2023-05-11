@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# : true
 
 class Comment < ApplicationRecord
   belongs_to :user
