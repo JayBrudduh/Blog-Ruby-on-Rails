@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # Create Comments Table
 class CreateComments < ActiveRecord::Migration[7.0]

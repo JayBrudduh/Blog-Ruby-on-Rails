@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Post < ApplicationRecord
   belongs_to :author, class_name: 'User'
   has_many :comments
@@ -14,6 +16,7 @@ class Post < ApplicationRecord
   end
 
   private
+
   def increment_counter
     author.increment!(:post_counter)
   end
