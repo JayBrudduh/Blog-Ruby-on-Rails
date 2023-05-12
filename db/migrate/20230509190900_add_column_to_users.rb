@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # Add columns to table
 class AddColumnToUsers < ActiveRecord::Migration[7.0]

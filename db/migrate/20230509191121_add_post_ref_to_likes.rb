@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 # Add Foreign Key
 class AddPostRefToLikes < ActiveRecord::Migration[7.0]
