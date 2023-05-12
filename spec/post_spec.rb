@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 
 describe User, type: :model do
@@ -35,12 +33,12 @@ describe User, type: :model do
   it 'Should return last last_five_comments' do
     user1 = User.create(name: 'Natasha', post_counter: 0)
     post1 = Post.create(author: user1, title: 'Title 1', text: 'Text 1', comments_counter: 0, likes_counter: 0)
-    comment1 = Comment.create(author: user1, post: post1, text: 'comment 1')
-    comment2 = Comment.create(author: user1, post: post1, text: 'comment 2')
-    comment3 = Comment.create(author: user1, post: post1, text: 'comment 3')
-    comment4 = Comment.create(author: user1, post: post1, text: 'comment 4')
-    comment5 = Comment.create(author: user1, post: post1, text: 'comment 5')
-    comment6 = Comment.create(author: user1, post: post1, text: 'comment 6')
+    Comment.create(author: user1, post: post1, text: 'comment 1')
+    Comment.create(author: user1, post: post1, text: 'comment 2')
+    Comment.create(author: user1, post: post1, text: 'comment 3')
+    Comment.create(author: user1, post: post1, text: 'comment 4')
+    Comment.create(author: user1, post: post1, text: 'comment 5')
+    Comment.create(author: user1, post: post1, text: 'comment 6')
 
     expect(post1.last_five_comments.length).to eq(5)
   end

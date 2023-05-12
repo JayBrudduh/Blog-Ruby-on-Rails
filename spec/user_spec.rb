@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 
 describe User, type: :model do
@@ -18,9 +16,9 @@ describe User, type: :model do
 
   it 'Should return last three post of a user' do
     user1 = User.create(name: 'Natasha', post_counter: 0)
-    post1 = Post.create(author: user1, title: 'Title 1', text: 'Text 1', comments_counter: 0, likes_counter: 0)
-    post2 = Post.create(author: user1, title: 'Title 2', text: 'Text 2', comments_counter: 0, likes_counter: 0)
-    post3 = Post.create(author: user1, title: 'Title 3', text: 'Text 3', comments_counter: 0, likes_counter: 0)
+    Post.create(author: user1, title: 'Title 1', text: 'Text 1', comments_counter: 0, likes_counter: 0)
+    Post.create(author: user1, title: 'Title 2', text: 'Text 2', comments_counter: 0, likes_counter: 0)
+    Post.create(author: user1, title: 'Title 3', text: 'Text 3', comments_counter: 0, likes_counter: 0)
 
 
     expect(user1.last_three_posts.length).to eq(3)
