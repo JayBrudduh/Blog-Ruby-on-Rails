@@ -20,7 +20,6 @@ describe User, type: :model do
     Post.create(author: user1, title: 'Title 2', text: 'Text 2', comments_counter: 0, likes_counter: 0)
     Post.create(author: user1, title: 'Title 3', text: 'Text 3', comments_counter: 0, likes_counter: 0)
 
-
     expect(user1.last_three_posts.length).to eq(3)
   end
 end
