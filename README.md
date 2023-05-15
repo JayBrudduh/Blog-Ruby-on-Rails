@@ -54,6 +54,7 @@
 
 - **Migration DB feature: tables and Relations**
 - **Models and Active Records**
+- **Controllers and Routes for Users and Posts**
 - **Rspec Test of all models**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
