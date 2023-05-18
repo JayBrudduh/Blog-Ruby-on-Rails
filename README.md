@@ -56,6 +56,7 @@
 - **Models and Active Records**
 - **Controllers and Routes for Users and Posts**
 - **Rspec Test of all models and controllers**
+- **Views for Users and Post controllers**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
