@@ -1,2 +1,14 @@
-<h1>Post <%= @id %></h1>
-<p>Here is a User Post</p>
+<div class="post_container">
+  <h4><%= @post.title %></h4>
+  <div class="extra_container">
+    <p>comments: <%= @post.comments_counter %></p>
+    <p>likes: <%= @post.likes_counter %></p>
+  </div>
+  <p class="post_content"><%= @post.text %></p>
+</div>
+
+<div class="comments_container">
+  <% @post.comments.each do |comment| %>
+    <%= render "comment", comment: comment %>
+  <% end %>
+</div>

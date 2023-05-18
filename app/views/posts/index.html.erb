@@ -1,9 +1,28 @@
-<h1>User Post Home</h1>
-<p>Here is a list of posts for a given User</p>
-<ul>
-  <li><a href="posts/1">Post 1</a></li>
-  <li><a href="posts/2">Post 2</a></li>
-  <li><a href="posts/3">Post 3</a></li>
-  <li><a href="posts/4">Post 4</a></li>
-  <li><a href="posts/5">Post 5</a></li>
-</ul>
+<div class="user_container">
+  <div class="picture_container">
+    <%= image_tag("default_profile_image.jpg") %>
+  </div>
+  <div class="user_name_container">
+    <h3> User: <%= @user.name %> </h3>
+    <p> Number of posts: <%= @user.post_counter %> </p>
+  </div>
+</div>
+  <% @user.posts.each do |post| %>
+    <div class="last_post">
+      <a href=<%= "/users/#{@user.id}/posts/#{post.id}" %>>
+        <p><%= post.title %></p>
+        <p class="post_text"><%= post.text %></p>
+      </a>
+      <div class="extra_container">
+          <p>Comments: <%= post.comments_counter %></p>
+          <p>Likes: <%= post.likes_counter %></p>
+      </div>
+    </div>
+    <div class="comments_container">
+      <% post.comments.limit(5).each do |comment| %>
+        <p><%= "#{comment.author.name}: #{comment.text}" %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+<a href="#">Pagination</a>
