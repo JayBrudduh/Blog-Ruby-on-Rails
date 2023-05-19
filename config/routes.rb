@@ -4,8 +4,20 @@ Rails.application.routes.draw do
   root 'users#index'
 
   resources :users, only: [:index, :show] do
-    resources :posts, only: [:index, :show]
+    resources :posts, only: [:index, :show, :new, :create] do
+      resources :comments, only: [:new, :create]
+      resources :likes, only: [:create]
+    end
   end
+
+  get 'post_create_new', to: 'posts#new'
+  post 'post_create_new', to: 'posts#create'
+
+  get 'comment_create_new', to: 'comments#new'
+  post 'comment_create_new', to: 'comments#create'
+
+  post 'like_create_new', to: 'likes#create'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
