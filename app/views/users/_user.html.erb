@@ -1,7 +1,7 @@
 <div class="user_container">
     <div class="picture_container">
-      <a href=<%= "/users/#{user.id}" %>>
-        <%= image_tag("default_profile_image.jpg") %>
+      <a id="picture_link" href=<%= "/users/#{user.id}" %>>
+        <%= image_tag(user.photo, class: "img_profile") %>
       </a>
     </div>
     <div class="user_name_container">

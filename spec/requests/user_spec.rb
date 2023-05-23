@@ -13,15 +13,16 @@ RSpec.describe 'users', type: :request do
     end
 
     it 'render correct users/show template' do
-      get '/users/show'
+      user1 = User.first
+      get "/users/#{user1.id}"
       expect(response).to render_template 'show'
     end
   end
 end
 
 RSpec.describe 'Response body includes correct placeholder text:', type: :feature do
-  scenario 'should content Blog Home text' do
+  scenario 'should content User' do
     visit '/users'
-    expect(page).to have_content('Blog Home')
+    expect(page).to have_content('User:')
   end
 end

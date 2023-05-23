@@ -1,5 +1,5 @@
 <div class="post_container">
-  <h4><%= @post.title %></h4>
+  <h4><%= "#{@post.title} by #{@post.author.name}"  %></h4>
   <div class="extra_container">
     <p>comments: <%= @post.comments_counter %></p>
     <p>likes: <%= @post.likes_counter %></p>
