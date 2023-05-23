@@ -8,7 +8,7 @@
 </div>
 
 <div class="comments_container">
-  <% @post.comments.each do |comment| %>
+  <% @post.comments.includes(:author).each do |comment| %>
     <%= render "comment", comment: comment %>
   <% end %>
 </div>
