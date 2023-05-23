@@ -10,7 +10,7 @@ RSpec.describe 'Index posts page', type: :system do
       post_counter: 0
     )
     post1 = Post.create(id: 1, title: 'Post Number 1',
-                        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque autem ipsa officiis.',
+                        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque autem ipsa offics.',
                         likes_counter: 0,
                         comments_counter: 0,
                         author: user1)
