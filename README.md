@@ -58,7 +58,8 @@
 - **Rspec Test of all models and controllers**
 - **Views for Users and Post controllers**
 - **Forms for Add Post, Comments and give Like**
-
+- **Capybara system tests**
+ 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
