@@ -19,9 +19,10 @@
       </div>
     </div>
     <div class="comments_container">
-      <% post.last_five_comments.each do |comment| %>
+      <% post.last_five_comments.includes(:author).each do |comment| %>
         <p class="comments_container_p"><%= "#{comment.author.name}: #{comment.text}" %></p>
       <% end %>
+    </div>
     </div>
   <% end %>
 
