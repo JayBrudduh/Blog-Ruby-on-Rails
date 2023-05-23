@@ -15,7 +15,7 @@ RSpec.describe 'Index users page', type: :system do
       text: 'Lorem Ipsu',
       likes_counter: 0,
       comments_counter: 0,
-      author: @user1
+      author: user1
     )
   end
   describe 'index page' do
