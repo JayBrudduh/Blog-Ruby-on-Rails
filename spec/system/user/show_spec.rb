@@ -53,13 +53,13 @@ RSpec.describe 'Show users page', type: :system do
 
     it 'should redirected to specific post page' do
       visit user_path(id: 10)
-      last_link = page.all(:link, 'last_post_a').last.click
+      page.all(:link, 'last_post_a').last.click
       expect(page).to have_current_path('/users/10/posts/2')
     end
 
     it 'should redirected to index post page' do
       visit user_path(id: 10)
-      last_link = page.all(:link, class: 'all_posts_btn').last.click
+      page.all(:link, class: 'all_posts_btn').last.click
       expect(page).to have_current_path('/users/10/posts')
     end
   end

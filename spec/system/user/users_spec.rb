@@ -9,7 +9,14 @@ RSpec.describe 'Index users page', type: :system do
       bio: 'Awesome User',
       post_counter: 0
     )
-    Post.create(id: 1, title: 'Post Number 1', text: 'Lorem Ipsu', likes_counter: 0, comments_counter: 0, author: @user1)
+    Post.create(
+      id: 1,
+      title: 'Post Number 1',
+      text: 'Lorem Ipsu',
+      likes_counter: 0,
+      comments_counter: 0,
+      author: @user1
+    )
   end
   describe 'index page' do
     it 'should show the username of all other users' do
@@ -29,7 +36,7 @@ RSpec.describe 'Index users page', type: :system do
 
     it 'should redirected to specific users show page' do
       visit users_path
-      last_link = page.all(:link, 'picture_link').last.click
+      page.all(:link, 'picture_link').last.click
       expect(page).to have_current_path('/users/10')
     end
   end

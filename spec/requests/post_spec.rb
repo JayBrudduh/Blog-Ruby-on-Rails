@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'Post', type: :request do
   describe 'GET /posts' do
-
     it 'return http success' do
       user1 = User.first
       get user_posts_path(user_id: user1.id)

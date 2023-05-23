@@ -10,8 +10,7 @@ RSpec.describe 'Index posts page', type: :system do
       post_counter: 0
     )
     post1 = Post.create(id: 1, title: 'Post Number 1',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque autem ipsa officiis molestiae
-      officia perferendis accusantium quis inventore ipsam consequuntur.',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque autem ipsa officiis molestiae',
       likes_counter: 0,
       comments_counter: 0,
       author: user1)
@@ -69,7 +68,7 @@ RSpec.describe 'Index posts page', type: :system do
 
     it 'should click on a post, it redirects to that posts show page' do
       visit user_posts_path(user_id: 10)
-      last_link = page.all(:link, class: 'last_post_a').first.click
+      page.all(:link, class: 'last_post_a').first.click
       expect(page).to have_current_path('/users/10/posts/2')
     end
   end
