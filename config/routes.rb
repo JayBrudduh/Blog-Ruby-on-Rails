@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     end
   end
 
+  delete '/logout', to: 'users#destroy', as: :logout
+
   get 'post_create_new', to: 'posts#new'
   post 'post_create_new', to: 'posts#create'
 
