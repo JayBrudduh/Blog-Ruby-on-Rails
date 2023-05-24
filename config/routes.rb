@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  devise_for :users
   root 'users#index'
 
   resources :users, only: [:index, :show] do
@@ -9,6 +10,8 @@ Rails.application.routes.draw do
       resources :likes, only: [:create]
     end
   end
+
+  delete '/logout', to: 'users#destroy', as: :logout
 
   get 'post_create_new', to: 'posts#new'
   post 'post_create_new', to: 'posts#create'

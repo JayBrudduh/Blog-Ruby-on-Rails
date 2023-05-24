@@ -14,11 +14,8 @@ class PostsController < ApplicationController
 
   def create
     post = Post.new(post_params)
-    if post.save
-      puts 'save'
-    else
-      pusts 'nooooooooooo'
-    end
+    post.save
+    redirect_to user_posts_path(user_id: current_user.id)
   end
 
   private
