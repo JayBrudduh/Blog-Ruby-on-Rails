@@ -59,7 +59,8 @@
 - **Views for Users and Post controllers**
 - **Forms for Add Post, Comments and give Like**
 - **Capybara system tests**
- 
+- **User authentication**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -146,3 +147,4 @@ This project is [MIT](<a href="./LICENSE">License</a>) licensed.
 <a href="./LICENSE">License</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
