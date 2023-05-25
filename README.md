@@ -59,7 +59,9 @@
 - **Views for Users and Post controllers**
 - **Forms for Add Post, Comments and give Like**
 - **Capybara system tests**
-- **User authentication**
+- **User Authentication**
+- **User roles Authorization**
+- **Delete Post and Comments functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,4 +149,3 @@ This project is [MIT](<a href="./LICENSE">License</a>) licensed.
 <a href="./LICENSE">License</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
