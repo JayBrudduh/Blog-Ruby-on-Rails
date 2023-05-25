@@ -1,0 +1,25 @@
+# frozen_string_literal: true
+
+class Ability
+  include CanCan::Ability
+
+  def initialize(user)
+    user ||= User.new(role: 'guest')
+
+    if user.role == 'admin'
+      can :manage, :all
+    elsif user.role == 'user'
+      can [:read, :create], :all
+      can :destroy, Post do |post|
+        puts post.author
+        puts user
+        post.author == user
+      end
+      can :destroy, Comment do |comment|
+        comment.author == user
+      end
+    else
+      can :read, :all
+    end
+  end
+end
